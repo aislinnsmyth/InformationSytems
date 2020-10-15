@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<XMI verified="false" xmi.version="1.2" timestamp="2020-10-12T14:32:36" xmlns:UML="http://schema.omg.org/spec/UML/1.4">
+<XMI verified="false" xmi.version="1.2" timestamp="2020-10-15T10:39:55" xmlns:UML="http://schema.omg.org/spec/UML/1.4">
  <XMI.header>
   <XMI.documentation>
    <XMI.exporter>umbrello uml modeller http://umbrello.kde.org</XMI.exporter>
@@ -47,25 +47,95 @@
       <UML:Class visibility="public" isSpecification="false" namespace="Logical_View" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="u8SxxSEi0F0xx" name="Artist News"/>
       <UML:Class visibility="public" isSpecification="false" namespace="Logical_View" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="uvSzPnA5A68i2" name="paymentMethod"/>
       <UML:Class visibility="public" isSpecification="false" namespace="Logical_View" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="uXIB0Z71wshBl" name="Payment"/>
+      <UML:Class visibility="public" isSpecification="false" namespace="Logical_View" isAbstract="true" isLeaf="false" isRoot="false" xmi.id="um2oTxJChAUiA" name="User">
+       <UML:Classifier.feature>
+        <UML:Attribute visibility="private" isSpecification="false" xmi.id="ufXJaf6wXNLig" type="uUhc5jBgUXmZh" initialValue="&quot;&quot;" name="firstName"/>
+        <UML:Attribute visibility="private" isSpecification="false" xmi.id="uPenaPNKoRauy" type="uUhc5jBgUXmZh" initialValue="&quot;&quot;" name="lastName"/>
+        <UML:Attribute visibility="private" isSpecification="false" xmi.id="uq46JvS2V2JRd" type="uUhc5jBgUXmZh" name="email"/>
+        <UML:Attribute visibility="private" isSpecification="false" xmi.id="upje91vuTl2Ef" type="u6OVq3ijStnvG" name="address"/>
+        <UML:Attribute visibility="private" isSpecification="false" xmi.id="uvKqhQqMbEdDP" type="uT3xZqE0QGMZL" name="birthdate"/>
+        <UML:Attribute visibility="private" isSpecification="false" xmi.id="uU9kXjhGyqJ5B" type="uUhc5jBgUXmZh" name="phoneNumber"/>
+        <UML:Operation visibility="public" isSpecification="false" isQuery="false" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="ukajyNtffOz4C" isOverride="false" name="getFirstName" isInline="false" isVirtual="false">
+         <UML:BehavioralFeature.parameter>
+          <UML:Parameter kind="return" xmi.id="uHVe9BXZxss7j" type="uUhc5jBgUXmZh"/>
+         </UML:BehavioralFeature.parameter>
+        </UML:Operation>
+        <UML:Operation visibility="public" isSpecification="false" isQuery="false" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="usdLLzNZDfy3i" isOverride="false" name="getLastName" isInline="false" isVirtual="false">
+         <UML:BehavioralFeature.parameter>
+          <UML:Parameter kind="return" xmi.id="uUNyKCkN7GTCT" type="uUhc5jBgUXmZh"/>
+         </UML:BehavioralFeature.parameter>
+        </UML:Operation>
+        <UML:Operation visibility="public" isSpecification="false" isQuery="false" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="uCkSlUt2L5koK" isOverride="false" name="getAge" isInline="false" isVirtual="false">
+         <UML:BehavioralFeature.parameter>
+          <UML:Parameter kind="return" xmi.id="uxqrPMGo03rzC" type="ueqLUJXfg6KVO"/>
+         </UML:BehavioralFeature.parameter>
+        </UML:Operation>
+        <UML:Operation visibility="public" isSpecification="false" isQuery="false" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="uMiWorRGYYf86" isOverride="false" name="getAddress" isInline="false" isVirtual="false">
+         <UML:BehavioralFeature.parameter>
+          <UML:Parameter kind="return" xmi.id="u3bkqfA61rHz7" type="uUhc5jBgUXmZh"/>
+         </UML:BehavioralFeature.parameter>
+        </UML:Operation>
+        <UML:Operation visibility="public" isSpecification="false" isQuery="false" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="uiEsQiMsPB2KT" isOverride="false" name="getPhoneNumber" isInline="false" isVirtual="false">
+         <UML:BehavioralFeature.parameter>
+          <UML:Parameter kind="return" xmi.id="urhNJlNW9dyvQ" type="uUhc5jBgUXmZh"/>
+         </UML:BehavioralFeature.parameter>
+        </UML:Operation>
+        <UML:Operation visibility="public" isSpecification="false" isQuery="false" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="utX0RrHPBr8hK" isOverride="false" name="setFirstName" isInline="false" isVirtual="false">
+         <UML:BehavioralFeature.parameter>
+          <UML:Parameter visibility="private" isSpecification="false" xmi.id="uTUfSN8UONeXp" type="uUhc5jBgUXmZh" value="" name="name"/>
+         </UML:BehavioralFeature.parameter>
+        </UML:Operation>
+        <UML:Operation visibility="public" isSpecification="false" isQuery="false" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="u8JfZmajCqTRZ" isOverride="false" name="setLastName" isInline="false" isVirtual="false">
+         <UML:BehavioralFeature.parameter>
+          <UML:Parameter visibility="private" isSpecification="false" xmi.id="uOHFq4O3akgep" type="uUhc5jBgUXmZh" value="" name="surname"/>
+         </UML:BehavioralFeature.parameter>
+        </UML:Operation>
+        <UML:Operation visibility="public" isSpecification="false" isQuery="false" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="ujrWp7H1tB0Xu" isOverride="false" name="setAddress" isInline="false" isVirtual="false">
+         <UML:BehavioralFeature.parameter>
+          <UML:Parameter visibility="private" isSpecification="false" xmi.id="uSIh2DUqjkdLp" type="u6OVq3ijStnvG" value="" name="newAddress"/>
+         </UML:BehavioralFeature.parameter>
+        </UML:Operation>
+        <UML:Operation visibility="public" isSpecification="false" isQuery="false" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="uIONETa9WLcep" isOverride="false" name="getEmail" isInline="false" isVirtual="false">
+         <UML:BehavioralFeature.parameter>
+          <UML:Parameter kind="return" xmi.id="um6lP2l3P7GNH" type="uUhc5jBgUXmZh"/>
+         </UML:BehavioralFeature.parameter>
+        </UML:Operation>
+        <UML:Operation visibility="public" isSpecification="false" isQuery="false" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="uwn51VxR2cnFL" isOverride="false" name="setEmail" isInline="false" isVirtual="false">
+         <UML:BehavioralFeature.parameter>
+          <UML:Parameter visibility="private" isSpecification="false" xmi.id="u6y2P0DLy4kgJ" type="uUhc5jBgUXmZh" value="" name="email"/>
+         </UML:BehavioralFeature.parameter>
+        </UML:Operation>
+       </UML:Classifier.feature>
+      </UML:Class>
+      <UML:Class visibility="public" isSpecification="false" namespace="Logical_View" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="uT3xZqE0QGMZL" name="date"/>
      </UML:Namespace.ownedElement>
      <XMI.extension xmi.extender="umbrello">
       <diagrams resolution="96">
-       <diagram showopsig="1" linecolor="#ff0000" snapx="25" showattribassocs="1" snapy="25" linewidth="0" showattsig="1" textcolor="#000000" isopen="1" showpackage="1" showpubliconly="0" showstereotype="1" name="class diagram" font="Sans Serif,9,-1,0,50,0,0,0,0,0" canvasheight="857.5" canvaswidth="744.562" localid="-1" snapcsgrid="0" showgrid="0" showops="1" griddotcolor="#d3d3d3" backgroundcolor="#ffffff" usefillcolor="1" fillcolor="#ffff00" zoom="65.75162324319884" xmi.id="uG9D5vBy0Y3wm" documentation="" showscope="1" snapgrid="0" showatts="1" type="1">
+       <diagram showopsig="1" linecolor="#ff0000" snapx="25" showattribassocs="1" snapy="25" linewidth="0" showattsig="1" textcolor="#000000" isopen="1" showpackage="1" showpubliconly="0" showstereotype="1" name="class diagram" font="Sans Serif,9,-1,0,50,0,0,0,0,0" canvasheight="934.638" canvaswidth="744.562" localid="-1" snapcsgrid="0" showgrid="0" showops="1" griddotcolor="#d3d3d3" backgroundcolor="#ffffff" usefillcolor="1" fillcolor="#ffff00" zoom="163.665373929461" xmi.id="uG9D5vBy0Y3wm" documentation="" showscope="1" snapgrid="0" showatts="1" type="1">
         <widgets>
          <classwidget linecolor="#ff0000" usesdiagramfillcolor="0" linewidth="0" textcolor="#000000" showoperations="1" usesdiagramusefillcolor="0" showpubliconly="0" showpackage="1" x="-9.675" showattsigs="601" showstereotype="1" y="-173.362" showattributes="1" font="Sans Serif,9,-1,0,50,0,0,0,0,0" localid="u7JA1lArMw0sp" width="112.29" isinstance="0" usefillcolor="1" fillcolor="#ffff00" xmi.id="u5t3FpP9X86uN" autoresize="0" showscope="1" height="114.838" showopsigs="601"/>
          <classwidget linecolor="#ff0000" usesdiagramfillcolor="0" linewidth="0" textcolor="#000000" showoperations="1" usesdiagramusefillcolor="0" showpubliconly="0" showpackage="1" x="98.5775" showattsigs="601" showstereotype="1" y="132.19" showattributes="1" font="Sans Serif,9,-1,0,50,0,0,0,0,0" localid="uGTkBbcHm8URk" width="143.06" isinstance="0" usefillcolor="1" fillcolor="#ffff00" xmi.id="ufrQRFtuK6LHY" autoresize="0" showscope="1" height="146.702" showopsigs="601"/>
          <classwidget linecolor="#ff0000" usesdiagramfillcolor="0" linewidth="0" textcolor="#000000" showoperations="1" usesdiagramusefillcolor="0" showpubliconly="0" showpackage="1" x="-319.9" showattsigs="601" showstereotype="1" y="-64.75" showattributes="1" font="Sans Serif,9,-1,0,50,0,0,0,0,0" localid="u80PzPptFEFdO" width="85.1" isinstance="0" usefillcolor="1" fillcolor="#ffff00" xmi.id="uRrz6yMhZzxq8" autoresize="0" showscope="1" height="102.6" showopsigs="601"/>
          <classwidget linecolor="#ff0000" usesdiagramfillcolor="0" linewidth="0" textcolor="#000000" showoperations="1" usesdiagramusefillcolor="0" showpubliconly="0" showpackage="1" x="-68" showattsigs="601" showstereotype="1" y="258" showattributes="1" font="Sans Serif,9,-1,0,50,0,0,0,0,0" localid="uDeCTi11cROL2" width="93.45" isinstance="0" usefillcolor="1" fillcolor="#ffff00" xmi.id="u4Dgm5OF9g4EK" autoresize="0" showscope="1" height="88.8" showopsigs="601"/>
-         <classwidget linecolor="#ff0000" usesdiagramfillcolor="0" linewidth="0" textcolor="#000000" showoperations="1" usesdiagramusefillcolor="0" showpubliconly="0" showpackage="1" x="-253.407" showattsigs="601" showstereotype="1" y="-288.808" showattributes="1" font="Sans Serif,9,-1,0,50,0,0,0,0,0" localid="uWD4uRml2CFeN" width="92.96" isinstance="0" usefillcolor="1" fillcolor="#ffff00" xmi.id="u6OVq3ijStnvG" autoresize="0" showscope="1" height="136.927" showopsigs="601"/>
+         <classwidget linecolor="#ff0000" usesdiagramfillcolor="0" linewidth="0" textcolor="#000000" showoperations="1" usesdiagramusefillcolor="0" showpubliconly="0" showpackage="1" x="-136.759" showattsigs="601" showstereotype="1" y="-142.911" showattributes="1" font="Sans Serif,9,-1,0,50,0,0,0,0,0" localid="uWD4uRml2CFeN" width="92.96" isinstance="0" usefillcolor="1" fillcolor="#ffff00" xmi.id="u6OVq3ijStnvG" autoresize="0" showscope="1" height="136.927" showopsigs="601"/>
          <classwidget linecolor="#ff0000" usesdiagramfillcolor="0" linewidth="0" textcolor="#000000" showoperations="1" usesdiagramusefillcolor="0" showpubliconly="0" showpackage="1" x="-256.15" showattsigs="601" showstereotype="1" y="104.15" showattributes="1" font="Sans Serif,9,-1,0,50,0,0,0,0,0" localid="ufjgBhOSmIz0R" width="93.65" isinstance="0" usefillcolor="1" fillcolor="#ffff00" xmi.id="uOTl5nsRLmvUw" autoresize="0" showscope="1" height="122.15" showopsigs="601"/>
          <classwidget linecolor="#ff0000" usesdiagramfillcolor="0" linewidth="0" textcolor="#000000" showoperations="1" usesdiagramusefillcolor="0" showpubliconly="0" showpackage="1" x="-470.2" showattsigs="601" showstereotype="1" y="113.6" showattributes="1" font="Sans Serif,9,-1,0,50,0,0,0,0,0" localid="uJBdKlZbtS3DR" width="105" isinstance="0" usefillcolor="1" fillcolor="#ffff00" xmi.id="uiGNxrxjqKTIU" autoresize="0" showscope="1" height="119.85" showopsigs="601"/>
          <classwidget linecolor="#ff0000" usesdiagramfillcolor="0" linewidth="0" textcolor="#000000" showoperations="1" usesdiagramusefillcolor="0" showpubliconly="0" showpackage="1" x="-200.35" showattsigs="601" showstereotype="1" y="373.1" showattributes="1" font="Sans Serif,9,-1,0,50,0,0,0,0,0" localid="u9ZHb8qih8zvy" width="95.6" isinstance="0" usefillcolor="1" fillcolor="#ffff00" xmi.id="uVijlogmhezEc" autoresize="0" showscope="1" height="109.5" showopsigs="601"/>
          <classwidget linecolor="#ff0000" usesdiagramfillcolor="0" linewidth="0" textcolor="#000000" showoperations="1" usesdiagramusefillcolor="0" showpubliconly="0" showpackage="1" x="13" showattsigs="601" showstereotype="1" y="369" showattributes="1" font="Sans Serif,9,-1,0,50,0,0,0,0,0" localid="ujEkl8QQ3HjNf" width="135.8" isinstance="0" usefillcolor="1" fillcolor="#ffff00" xmi.id="u8SxxSEi0F0xx" autoresize="0" showscope="1" height="107.2" showopsigs="601"/>
          <classwidget linecolor="#ff0000" usesdiagramfillcolor="0" linewidth="0" textcolor="#000000" showoperations="1" usesdiagramusefillcolor="0" showpubliconly="0" showpackage="1" x="107.237" showattsigs="601" showstereotype="1" y="-357.708" showattributes="1" font="Sans Serif,9,-1,0,50,0,0,0,0,0" localid="uD7zPAVMgpbS5" width="167.125" isinstance="0" usefillcolor="1" fillcolor="#ffff00" xmi.id="uvSzPnA5A68i2" autoresize="0" showscope="1" height="129.51" showopsigs="601"/>
          <classwidget linecolor="#ff0000" usesdiagramfillcolor="0" linewidth="0" textcolor="#000000" showoperations="1" usesdiagramusefillcolor="0" showpubliconly="0" showpackage="1" x="-105.857" showattsigs="601" showstereotype="1" y="-374.9" showattributes="1" font="Sans Serif,9,-1,0,50,0,0,0,0,0" localid="uLuPtsEt1seE3" width="115.545" isinstance="0" usefillcolor="1" fillcolor="#ffff00" xmi.id="uXIB0Z71wshBl" autoresize="0" showscope="1" height="126.865" showopsigs="601"/>
+         <classwidget linecolor="#ff0000" usesdiagramfillcolor="0" linewidth="0" textcolor="#000000" showoperations="1" usesdiagramusefillcolor="0" showpubliconly="0" showpackage="1" x="-376.164" showattsigs="601" showstereotype="1" y="-452.038" showattributes="1" font="Sans Serif,9,-1,0,50,0,0,0,0,0" drawascircle="0" localid="uqVogf03IyPby" width="214" isinstance="0" usefillcolor="1" fillcolor="#ffff00" xmi.id="um2oTxJChAUiA" autoresize="1" showscope="1" height="255" showopsigs="601"/>
         </widgets>
         <messages/>
-        <associations/>
+        <associations>
+         <assocwidget linecolor="#ff0000" indexa="1" usesdiagramfillcolor="1" widgetbid="u6OVq3ijStnvG" indexb="1" linewidth="0" seqnum="" textcolor="none" usesdiagramusefillcolor="1" totalcounta="2" totalcountb="2" widgetaid="um2oTxJChAUiA" font="Sans Serif,9,-1,0,50,0,0,0,0,0" visibilityA="1" visibilityB="1" localid="uphgl3ZQFTl4F" usefillcolor="1" fillcolor="none" changeabilityA="900" xmi.id="upje91vuTl2Ef" changeabilityB="900" autoresize="1" type="510">
+          <linepath layout="Direct">
+           <startpoint startx="-162.164" starty="-197.038"/>
+           <endpoint endx="-136.759" endy="-142.911"/>
+          </linepath>
+          <floatingtext linecolor="#ff0000" usesdiagramfillcolor="1" linewidth="0" textcolor="none" usesdiagramusefillcolor="1" x="-210.164" showstereotype="1" y="-178.808" text="address" font="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" localid="uWPWKUQ298VZC" pretext="-" role="710" width="50" isinstance="0" posttext="" usefillcolor="1" fillcolor="none" xmi.id="uhTT62EkXyUWh" autoresize="1" height="17"/>
+         </assocwidget>
+        </associations>
        </diagram>
       </diagrams>
      </XMI.extension>
@@ -86,7 +156,7 @@
   </UML:Model>
  </XMI.content>
  <XMI.extensions xmi.extender="umbrello">
-  <docsettings viewid="uG9D5vBy0Y3wm" uniqueid="uLuPtsEt1seE3" documentation=""/>
+  <docsettings viewid="uG9D5vBy0Y3wm" uniqueid="um6lP2l3P7GNH" documentation=""/>
   <listview>
    <listitem open="1" type="800" id="Views">
     <listitem open="1" type="821" id="Component_View"/>
@@ -116,6 +186,7 @@
       <listitem open="0" type="829" id="uQtppJbgKZAr0"/>
       <listitem open="0" type="829" id="uDFjUCkAudoqX"/>
      </listitem>
+     <listitem open="1" type="813" id="uT3xZqE0QGMZL"/>
      <listitem open="1" type="813" id="u4Dgm5OF9g4EK"/>
      <listitem open="1" type="813" id="uXIB0Z71wshBl"/>
      <listitem open="1" type="813" id="uvSzPnA5A68i2"/>
@@ -124,6 +195,24 @@
      <listitem open="1" type="813" id="uOTl5nsRLmvUw"/>
      <listitem open="1" type="813" id="uiGNxrxjqKTIU"/>
      <listitem open="1" type="813" id="uVijlogmhezEc"/>
+     <listitem open="1" type="813" id="um2oTxJChAUiA">
+      <listitem open="0" type="814" id="upje91vuTl2Ef"/>
+      <listitem open="0" type="814" id="uvKqhQqMbEdDP"/>
+      <listitem open="0" type="814" id="uq46JvS2V2JRd"/>
+      <listitem open="0" type="814" id="ufXJaf6wXNLig"/>
+      <listitem open="0" type="815" id="uMiWorRGYYf86"/>
+      <listitem open="0" type="815" id="uCkSlUt2L5koK"/>
+      <listitem open="0" type="815" id="uIONETa9WLcep"/>
+      <listitem open="0" type="815" id="ukajyNtffOz4C"/>
+      <listitem open="0" type="815" id="usdLLzNZDfy3i"/>
+      <listitem open="0" type="815" id="uiEsQiMsPB2KT"/>
+      <listitem open="0" type="814" id="uPenaPNKoRauy"/>
+      <listitem open="0" type="814" id="uU9kXjhGyqJ5B"/>
+      <listitem open="0" type="815" id="ujrWp7H1tB0Xu"/>
+      <listitem open="0" type="815" id="uwn51VxR2cnFL"/>
+      <listitem open="0" type="815" id="utX0RrHPBr8hK"/>
+      <listitem open="0" type="815" id="u8JfZmajCqTRZ"/>
+     </listitem>
      <listitem open="1" type="813" id="uRrz6yMhZzxq8"/>
     </listitem>
     <listitem open="1" type="802" id="Use_Case_View"/>
